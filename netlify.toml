@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
   publish = "out"
-  functions = serverless/functions
+  functions = "serverless/functions"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
