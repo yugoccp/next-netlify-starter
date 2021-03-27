@@ -4,7 +4,9 @@ import Footer from '@components/Footer'
 
 export default function Home() {
 
-  fetch("/.netlify/functions/hello").then(console.log)
+  fetch("/.netlify/functions/hello")
+    .then(resp => resp.json())
+    .then(console.log)
 
   return (
     <div className="container">
